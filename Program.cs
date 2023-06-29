@@ -52,7 +52,8 @@ Console.Write("Введите желаемый размер строкового
 int n =  int.Parse(Console.ReadLine()!);
 while (n < 1 || n > 10)
 {
-    Console.WriteLine("Вы ошиблись!\nВведите значание от 1 до 10");
+    Console.Write("Вы ошиблись!\nВведите значание от 1 до 10 : ");
+    n =  int.Parse(Console.ReadLine()!);
 }
 string[] array = new string[n];
 int m = FillBassicArray(array);
